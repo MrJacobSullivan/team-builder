@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { v4 as uuid } from 'uuid'
 
 import Form from './components/Form'
 import TeamMemberList from './components/TeamMemberList'
@@ -21,6 +22,7 @@ function App() {
 
   const submitForm = () => {
     const newMember = {
+      id: uuid(),
       name: formValues.name.trim(),
       email: formValues.email.trim(),
       role: formValues.role,
