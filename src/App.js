@@ -1,14 +1,18 @@
 import { useState } from 'react'
 
-import TeamList from './components/TeamList'
+import Form from './components/Form'
+import TeamMemberList from './components/TeamMemberList'
 import './App.css'
 
 function App() {
   const [teamMembers, setTeamMembers] = useState([])
 
+  const handleChange = () => {}
+
   return (
     <div className='App'>
-      <TeamList teamMembers={teamMembers} />
+      <Form handleChange={handleChange} />
+      <TeamMemberList teamMembers={teamMembers} />
     </div>
   )
 }
