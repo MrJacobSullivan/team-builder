@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const [teamMembers, setTeamMembers] = useState([])
 
-  const handleChange = () => {}
+  const handleChange = (name, value) => {}
 
   return (
     <div className='App'>
