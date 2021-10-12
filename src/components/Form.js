@@ -23,10 +23,10 @@ export default function Form({ values, update, submit, error }) {
         Role
         <select value={values.role} name='role' onChange={onChange}>
           <option value=''>-- Select a role --</option>
-          <option value='Student'>Student</option>
-          <option value='Team Lead'>Team Lead</option>
-          <option value='Instructor'>Instructor</option>
-          <option value='Alumni'>Alumni</option>
+          <option value='Manager'>Manager</option>
+          <option value='Engineer'>Engineer</option>
+          <option value='Designer'>Designer</option>
+          <option value='Intern'>Intern</option>
         </select>
       </label>
 
