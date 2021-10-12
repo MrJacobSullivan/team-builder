@@ -1,7 +1,16 @@
+import { useState } from 'react'
+
+import TeamList from './components/TeamList'
 import './App.css'
 
 function App() {
-  return <div className='App'></div>
+  const [teamMembers, setTeamMembers] = useState([])
+
+  return (
+    <div className='App'>
+      <TeamList teamMembers={teamMembers} />
+    </div>
+  )
 }
 
 export default App
