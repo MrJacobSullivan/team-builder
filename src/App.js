@@ -22,7 +22,7 @@ function App() {
   const submitForm = () => {
     const newMember = {
       name: formValues.name.trim(),
-      email: formValues.email,
+      email: formValues.email.trim(),
       role: formValues.role,
     }
 

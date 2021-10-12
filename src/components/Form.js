@@ -10,7 +10,7 @@ export default function Form({ values, update, submit, error }) {
   }
 
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <label>
         Name:
         <input type='text' name='name' value={values.name} onChange={onChange} />
@@ -31,6 +31,8 @@ export default function Form({ values, update, submit, error }) {
       </label>
 
       <button>submit</button>
+
+      {error && <h3>{error}</h3>}
     </form>
   )
 }
